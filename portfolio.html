@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+        <link rel="stylesheet" href="portfolio.css">
+        <title>My porfolio</title>
+    </head>
+    <body>
+        <main>
+          <aside>
+            <ul class="Links">
+              <li onclick="Navigate(0)" class="activeLink"><i class="fa-solid fa-house"></i>
+                <p>Home</p>
+              </li>
+              <li onclick="Navigate(1)"><i class="fa-solid fa-user" ></i>
+                <p>About Me</p>
+              </li>
+              <li onclick="Navigate(2)"><i class="fa-solid fa-list"></i>
+                <p>Paper Works
+                </p>
+              </li>
+              <li onclick="Navigate(3)"><i class="fa-solid fa-images"></i>
+                <p>Quizzes</p>
+              </li>
+              <li onclick="Navigate(4)"><i class="fa-solid fa-comments"></i>
+                <p>Feedback</p>
+              </li>
+            </ul>
+          </aside>
+            <div class="swiper mySwiper">
+                <div class="SlideContainer swiper-wrapper">
+                    <div class="swiper-slide home-slide">
+                        <div class="HomeContent">
+                            <h1>Hi! I'm <span class="stylized-name">Vincent Galvez</span>,</h1>
+                            <h2>A <span class="proffesions">BSED MATH 3A STUDENT</span></h2>
+                        </div>
+                        <div class="SideImg">
+                            <div class="top-right-corner">
+                                <hr class="hr1">
+                                <hr class="hr2">
+                            </div>
+                            <img src="images/profile pic.jpg" alt="">
+                            <div class="bottom-left-corner">
+                                <hr class="hr1">
+                                <hr class="hr2">
+                            </div>
+                        </div>
+                        <p class="slide-help">Scroll for next slide <i class="fa-solid fa-chevron-right fa-shake"></i>
+                        </p>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="about-us">
+                        <h1 class="heading">About Me</h1>
+                        <p class="aboutme-deatils">
+                            I'm a passionate soul who loves the world of art and the thrill of exploration. Whether it's admiring the works of talented artists or diving into new experiences and ideas, I find inspiration everywhere. Creativity and curiosity are my driving forces, and I'm always eager to learn, discover, and grow.
+                        </p>
+                        <div class="about-me-divison">
+                            <div class="about-me-table">
+                                <li><span>Year&Sec:</span>BSED MATH 3A</li>
+                                <li><span>Country:</span> Philippines</li>
+                                <li><span>Student ID:</span> 22-1627 </li>
+                                <li><span>Hobby:</span>none</li>
+                                <li><span>Age</span>:20</li>
+                                <li><span>Phone</span>:09939943252</li>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    <div class="swiper-slide services">
+                        <h1 class="heading">works and project</h1>
+                        <div class="service">
+                            <div class="service-icon"><i class="fa-solid fa-globe"></i></div>
+                            <h2>Lesson Plan</h2>
+                            <a href="file1/dlt.pdf">download project</a>
+                        </div>
+                        <div class="service">
+                            <div class="service-icon"><i class="fa-solid fa-book"></i></div>
+                            <h2>Infographic & philosopy of education</h2>
+                            <a href="file1/vincentpogi (1).docx">download project</a>
+                        </div>
+                        <div class="service">
+                            <div class="service-icon"><i class="fa-regular fa-file"></i></div>
+                            <h2>Empty</h2>
+                            <a href="">download project</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide gallery">
+                        <h1 class="heading">Quizzes</h1>
+                        <div class="project"><img src="images/quiz1.jpg.jpg" alt=""></div>
+                        <div class="project"><img src="images/quiz2.jpg" alt=""></div>
+                        <div class="project"><img src="images/meow3.jpg" alt=""></div>
+                        <div class="project"><img src="images/meow4.jpg" alt=""></div>
+                        <div class="project"><img src="images/meow5.jpg" alt=""></div>
+                        <div class="project"><img src="images/meow6.jpg" alt=""></div>
+                    </div>
+
+                    <div class="swiper-slide contactMe">
+                        <h1 class="heading">feedback</h1>
+                        <div class="contactinfo"><i class="fa-solid fa-phone"></i>
+                            <h3>Mobile No</h3>
+                            <p>09939943252</p>
+                        </div>
+                        <div class="contactinfo"><i class="fa-solid fa-location-dot"></i>
+                            <h3>Location</h3>
+                            <p>Sta cruz cabusao camarinez sur</p>
+                        </div>
+                        <div class="contactinfo"><i class="fa-regular fa-envelope"></i>
+                            <h3>Email</h3>
+                            <p>cent5391@gmail.com</p>
+                        </div>
+                        <form>
+                            <h2>Send Me A Feedback <div class="SocialLinks">
+                                    <i class="fa-brands fa-codepen"></i>
+                                    <i class="fa-brands fa-instagram"></i>
+                                    <i class="fa-brands fa-twitter"></i>
+                                    <i class="fa-brands fa-facebook"></i>
+                                </div>
+                            </h2>
+                            <input type="text" placeholder="Name">
+                            <input type="text" placeholder="email">
+                            <textarea rows="10" placeholder="Type your Message Here..."></textarea>
+                            <button class="primary">Send</button>
+    
+                        </form>
+                        <footer>
+                            <li>galvez @owncode</li>
+                        </footer>
+                    </div>
+                </div>
+        </main>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+        <script src="portfolio.js"></script>
+    </body>
+</html>
